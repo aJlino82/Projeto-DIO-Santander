@@ -2,8 +2,8 @@ package com.ajr.santander.model;
 
 import lombok.*;
 
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
+
 
 @Getter
 @Setter
@@ -12,6 +12,7 @@ import javax.persistence.OneToMany;
 @EqualsAndHashCode
 @Builder
 public class Localidade {
+
     private Long id;
     @ManyToOne
     private NivelAcesso nivelAcesso;

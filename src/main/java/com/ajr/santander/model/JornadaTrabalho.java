@@ -2,7 +2,9 @@ package com.ajr.santander.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
 import java.util.Objects;
+
 
 @Getter
 @Setter
@@ -11,6 +13,7 @@ import java.util.Objects;
 @EqualsAndHashCode
 @Builder
 public class JornadaTrabalho {
+
     private long id;
     private String descricao;
 }

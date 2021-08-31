@@ -1,13 +1,13 @@
 package com.ajr.santander.model;
 
 import lombok.*;
-import net.bytebuddy.asm.Advice;
 
-import javax.persistence.Embeddable;
-import javax.persistence.EmbeddedId;
+
+import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+
 
 @Getter
 @Setter
@@ -25,6 +25,7 @@ public class Movimentacao {
         private long idUsuario;
 
     }
+
     @EmbeddedId
     private Movimentacao id;
     private LocalDateTime dataEntrada;

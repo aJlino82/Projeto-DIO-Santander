@@ -2,7 +2,9 @@ package com.ajr.santander.model;
 
 import lombok.*;
 
+
 import java.time.LocalDateTime;
+
 
 @Getter
 @Setter
@@ -10,8 +12,11 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+
 public class Calendario {
+
     private Long id;
+
     private TipoData tipoData;
     private String descricao;
     private LocalDateTime dataEspecial;
