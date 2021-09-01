@@ -2,9 +2,7 @@ package com.ajr.santander.model;
 
 import lombok.*;
 
-import javax.persistence.Embeddable;
-import javax.persistence.Embedded;
-
+import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -15,7 +13,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
-
+@Entity
 public class BancoHoras {
 
 
@@ -23,14 +21,14 @@ public class BancoHoras {
     @NoArgsConstructor
     @EqualsAndHashCode
     @Embeddable
-    public class BancoHorasID implements Serializable {
+    public class BancoHorasId implements Serializable {
         private Long idBancoHoras;
         private Long idMovimentacao;
         private Long idUsuario;
     }
-
-    @Embedded
-    private BancoHorasID id;
+    @Id
+    @EmbeddedId
+    private BancoHorasId id;
     private LocalDateTime dataTrabalhada;
     private BigDecimal quantidadeHoras;
     private BigDecimal saldoHoras;

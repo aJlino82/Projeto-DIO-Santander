@@ -11,9 +11,10 @@ import javax.persistence.*;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
 public class Localidade {
-
-    private Long id;
+    @Id
+    private long id;
     @ManyToOne
     private NivelAcesso nivelAcesso;
     private String descricao;

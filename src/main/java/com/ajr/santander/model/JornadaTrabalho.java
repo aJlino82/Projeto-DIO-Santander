@@ -3,7 +3,9 @@ package com.ajr.santander.model;
 import lombok.*;
 
 import javax.persistence.Entity;
-import java.util.Objects;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 
 
 @Getter
@@ -12,8 +14,10 @@ import java.util.Objects;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
 public class JornadaTrabalho {
-
+    @Id
+    @GeneratedValue
     private long id;
     private String descricao;
 }

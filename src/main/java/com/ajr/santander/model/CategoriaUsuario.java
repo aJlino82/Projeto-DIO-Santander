@@ -1,9 +1,8 @@
 package com.ajr.santander.model;
 
 import lombok.*;
-
+import org.hibernate.envers.Audited;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 
@@ -14,8 +13,10 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
+@Audited
 public class CategoriaUsuario {
-
+    @Id
     private Long id;
     private String descricao;
 }

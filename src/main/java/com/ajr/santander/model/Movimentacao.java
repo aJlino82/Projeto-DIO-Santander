@@ -15,22 +15,25 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
 public class Movimentacao {
     @AllArgsConstructor
     @NoArgsConstructor
     @EqualsAndHashCode
     @Embeddable
-    public class MovimentacaoID implements Serializable {
-        private long idMovimenta;
-        private long idUsuario;
+    public class MovimentacaoId implements Serializable {
+        private Long idMovimenta;
+        private Long idUsuario;
 
     }
-
+    @Id
     @EmbeddedId
-    private Movimentacao id;
+    private MovimentacaoId movimentacaoId;
     private LocalDateTime dataEntrada;
     private LocalDateTime dataSaida;
     private BigDecimal periodo;
+    @ManyToOne
     private Ocorrencia ocorrencia;
+    @ManyToOne
     private Calendario calendario;
 }

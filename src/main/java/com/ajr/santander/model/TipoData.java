@@ -3,6 +3,7 @@ package com.ajr.santander.model;
 import lombok.*;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 
 @Getter
@@ -11,7 +12,9 @@ import javax.persistence.Entity;
 @NoArgsConstructor
 @EqualsAndHashCode
 @Builder
+@Entity
 public class TipoData {
-    private Long id;
+    @Id
+    private long id;
     private String descricao;
 }
