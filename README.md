@@ -1,4 +1,4 @@
-#Sitema de cadastro de ponto do boot camp Santander DIO 2021
+# Sistema de Cadastro de Ponto do Boot Camp Santander DIO 2021
 # Adailton Lino Ferreira Junior
 
 Construindo um sistema de controle de ponto e acesso com Java, Spring Boot, Hibernate Envers e lombok e Swagger.
