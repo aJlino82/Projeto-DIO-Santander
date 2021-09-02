@@ -6,8 +6,7 @@ Construindo um sistema de controle de ponto e acesso com Java, Spring Boot, Hibe
 
 ## Sobre a construção do projeto
 
-Construi a aplicação do zero acompanhando na vídeo aula, só colei códigos quando não consegui encontrar onde tinha quebrado,
-fiz modificações na conexão do banco, usei o Mysql e não o H2, li as codumentações, assiti outras aulas até conseguir conectar com o banco, e o Inteliji ajudou muito.
+Construí a aplicação do zero acompanhando na vídeo aula, só colei códigos quando não consegui encontrar onde tinha quebrado, fiz modificações na conexão do banco, usei o Mysql e não o H2, li as documentações, assiti outras aulas até conseguir conectar com o banco, e o Inteliji ajudou muito.
 
 ## Contato
 
