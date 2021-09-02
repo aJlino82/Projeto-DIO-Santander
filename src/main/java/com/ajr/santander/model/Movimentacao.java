@@ -2,12 +2,10 @@ package com.ajr.santander.model;
 
 import lombok.*;
 
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-
 
 @Getter
 @Setter
@@ -17,14 +15,14 @@ import java.time.LocalDateTime;
 @Builder
 @Entity
 public class Movimentacao {
+
     @AllArgsConstructor
     @NoArgsConstructor
     @EqualsAndHashCode
     @Embeddable
-    public class MovimentacaoId implements Serializable {
-        private Long idMovimenta;
-        private Long idUsuario;
-
+    public  class  MovimentacaoId implements Serializable{
+        private long idMovimento;
+        private long idUsuario;
     }
     @Id
     @EmbeddedId

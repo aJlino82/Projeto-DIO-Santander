@@ -2,7 +2,9 @@ package com.ajr.santander.model;
 
 import lombok.*;
 import org.hibernate.envers.Audited;
+
 import javax.persistence.Entity;
+
 import javax.persistence.Id;
 
 
@@ -15,12 +17,11 @@ import javax.persistence.Id;
 @Entity
 @Audited
 public class Empresa {
-
     @Id
     private Long id;
     private String descricao;
     private String cpf;
-    private String cnpj;
+    private String cnpf;
     private String endereco;
     private String bairro;
     private String cidade;

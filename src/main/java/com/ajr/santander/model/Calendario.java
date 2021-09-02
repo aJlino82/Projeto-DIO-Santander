@@ -2,12 +2,10 @@ package com.ajr.santander.model;
 
 import lombok.*;
 
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import java.time.LocalDateTime;
-
 
 @Getter
 @Setter

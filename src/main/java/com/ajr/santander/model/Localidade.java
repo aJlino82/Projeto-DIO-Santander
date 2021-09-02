@@ -2,7 +2,10 @@ package com.ajr.santander.model;
 
 import lombok.*;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
 
 
 @Getter
@@ -14,10 +17,8 @@ import javax.persistence.*;
 @Entity
 public class Localidade {
     @Id
-    private long id;
+    private  long id;
     @ManyToOne
     private NivelAcesso nivelAcesso;
     private String descricao;
-
-
 }

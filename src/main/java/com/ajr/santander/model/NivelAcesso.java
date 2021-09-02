@@ -1,10 +1,10 @@
 package com.ajr.santander.model;
 
 import lombok.*;
+import org.hibernate.envers.Audited;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-
 
 @Getter
 @Setter
@@ -13,11 +13,9 @@ import javax.persistence.Id;
 @EqualsAndHashCode
 @Builder
 @Entity
+@Audited
 public class NivelAcesso {
     @Id
     private long id;
     private String descricao;
 }
-
-//long = dado primitivo para indentificar um dado de 64 bit(representa um dado).
-//Long = classe Wrapper(representa uma class/objeto)
